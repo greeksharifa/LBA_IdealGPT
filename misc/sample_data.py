@@ -18,7 +18,7 @@ def parse():
     return args
 
 def Sample_VCR(dataset, data_num):
-    dataset_path = '/home/haoxuan/data/vcr1/'
+    dataset_path = '~/T5/ywjang/data/vcr1/'
     if 'val' in dataset:
         dataset_anno_dir = os.path.join(dataset_path, 'val.jsonl')
     else:

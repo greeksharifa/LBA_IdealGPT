@@ -140,7 +140,7 @@ def IdealGPT(vqa_model, dataset, data_ids, model, save_path='', max_n_rounds=5, 
 
 def parse():
     parser = argparse.ArgumentParser(description='IdealGPT Args.')
-    parser.add_argument('--data_root', type=str, default='/home/haoxuan/data/vcr1/', 
+    parser.add_argument('--data_root', type=str, default='~/T5/ywjang/data/vcr1/', 
                         help='root path to the dataset')
     parser.add_argument('--save_root', type=str, default='./exp_result/', 
                         help='root path for saving results')

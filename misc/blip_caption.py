@@ -84,7 +84,7 @@ def load_ve_data(ve_data_path, image_path):
 #             Data Loading
 # ========================================
 if 'vcr' in args.dataset:
-    vcr_data_path = '/home/haoxuan/data/vcr1/'
+    vcr_data_path = '~/T5/ywjang/data/vcr1/'
     img_paths = load_vcr_data(vcr_data_path)
 elif 've' in args.dataset:
     ve_data_path = '/dvmm-filer3a/users/rui/multi-task/datasets/visual_entailment/'

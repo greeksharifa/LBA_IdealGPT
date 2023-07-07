@@ -8,7 +8,7 @@ import pdb
 
 def parse():
     parser = argparse.ArgumentParser(description='IdealGPT in test datasets.')
-    parser.add_argument('--result', type=str, default='/home/haoxuan/code/SubGPT/exp_result/vcr_04262356/vcr_val/result', 
+    parser.add_argument('--result', type=str, default='~/T5/ywjang/SubGPT/exp_result/vcr_04262356/vcr_val/result', 
                         help='VCR predicted result path')
     parser.add_argument('--print_multiround', action='store_true', 
                         help='Whether print the annoid of multiple rounds and correct samples.')
