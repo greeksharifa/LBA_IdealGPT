@@ -10,9 +10,9 @@ import jsonlines
 
 def parse():
     parser = argparse.ArgumentParser(description='IdealGPT in test datasets.')
-    parser.add_argument('--result', type=str, default='~/T5/ywjang/SubGPT/exp_result/vcr_val_random500_t5xl_captionv2_twoagent_promptv1a_multitry/result', 
+    parser.add_argument('--result', type=str, default='/home/work/T5/ywjang/SubGPT/exp_result/vcr_val_random500_t5xl_captionv2_twoagent_promptv1a_multitry/result', 
                         help='VCR predicted result path')
-    parser.add_argument("--data_subset", type=str, default='~/T5/ywjang/SubGPT/exp_data/vcr_val_random500_annoid.yaml', help="specify the subset of the dataset.")
+    parser.add_argument("--data_subset", type=str, default='/home/work/T5/ywjang/SubGPT/exp_data/vcr_val_random500_annoid.yaml', help="specify the subset of the dataset.")
     args = parser.parse_args()
     return args
 
@@ -25,7 +25,7 @@ with open(args.data_subset, "r") as file:
     id_partitions = yaml.safe_load(file)
 
 ids_insubset = []
-dataset_anno_dir = os.path.join('~/T5/ywjang/data/vcr1/', 'val.jsonl')
+dataset_anno_dir = os.path.join('/home/work/T5/ywjang/data/vcr1/', 'val.jsonl')
 with jsonlines.open(dataset_anno_dir) as reader:
     for cur_ann in tqdm(reader):
         annot_id = cur_ann['annot_id']

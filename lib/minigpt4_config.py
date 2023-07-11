@@ -13,7 +13,7 @@ from omegaconf import OmegaConf
 
 # Add MiniGPT-4 project directory into python path to import minigpt4
 import sys
-sys.path.append('~/T5/ywjang/MiniGPT-4')
+sys.path.append('/home/work/T5/ywjang/MiniGPT-4')
 
 from minigpt4.common.registry import registry
 

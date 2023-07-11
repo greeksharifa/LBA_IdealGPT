@@ -2,7 +2,7 @@ from .minigpt4_config import Config
 
 # Add MiniGPT-4 project directory into python path to import minigpt4
 import sys
-sys.path.append('~/T5/ywjang/MiniGPT-4')
+sys.path.append('/home/work/T5/ywjang/MiniGPT-4')
 
 from minigpt4.common.registry import registry
 from minigpt4.conversation.conversation import Chat, CONV_VISION
@@ -12,7 +12,7 @@ class DictToClass:
         self.__dict__.update(entries)
 
 class MINIGPT4():
-    def __init__(self, cfg_path='~/T5/ywjang/MiniGPT-4/eval_configs/minigpt4_eval.yaml', gpu_id=0, 
+    def __init__(self, cfg_path='/home/work/T5/ywjang/MiniGPT-4/eval_configs/minigpt4_eval.yaml', gpu_id=0, 
                  options=None, temperature=0.001):
         args = {'cfg_path':cfg_path, 'gpu_id':gpu_id, 'options':options}
         args = DictToClass(**args)

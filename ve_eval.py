@@ -8,7 +8,7 @@ import pdb
 
 def parse():
     parser = argparse.ArgumentParser(description='IdealGPT in test datasets.')
-    parser.add_argument('--result', type=str, default='~/T5/ywjang/MiniGPT-4/result/qa/ve/promptv1_temp0.001_ve_dev_random500_pairid', 
+    parser.add_argument('--result', type=str, default='/home/work/T5/ywjang/MiniGPT-4/result/qa/ve/promptv1_temp0.001_ve_dev_random500_pairid', 
                         help='SNLI-VE predicted result path')
     parser.add_argument('--print_multiround', action='store_true', 
                         help='Whether print the annoid of multiple rounds and correct samples.')
